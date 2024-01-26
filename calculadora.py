@@ -19,10 +19,10 @@ def realizar_operacion(operacion):
                 messagebox.showerror("Error", "No se puede dividir entre cero.")
                 return
 
-        entry_resultado.config(state=tk.NORMAL)  # Permitir la escritura en el Entry
+        entry_resultado.config(state=tk.NORMAL)
         entry_resultado.delete(0, tk.END)
         entry_resultado.insert(0, f"Resultado de {operacion}: {resultado:.2f}")
-        entry_resultado.config(state=tk.DISABLED)  # Deshabilitar la escritura en el Entry
+        entry_resultado.config(state=tk.DISABLED)
 
     except ValueError:
         messagebox.showerror("Error", "Por favor, ingrese números válidos.")
@@ -45,7 +45,6 @@ label_num2.grid(row=1, column=0, padx=10, pady=5, sticky="E")
 entry_num2 = tk.Entry(ventana)
 entry_num2.grid(row=1, column=1, padx=10, pady=5)
 
-
 boton_suma = tk.Button(ventana, text="Suma", command=lambda: realizar_operacion('Suma'), bg="blue", fg="white")
 boton_suma.grid(row=2, column=0, padx=5, pady=5)
 
@@ -60,6 +59,5 @@ boton_division.grid(row=3, column=1, padx=5, pady=5)
 
 entry_resultado = tk.Entry(ventana, width=30, state="readonly", justify="center")
 entry_resultado.grid(row=4, column=0, columnspan=2, pady=5)
-
 
 ventana.mainloop()
