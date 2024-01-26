@@ -45,7 +45,7 @@ label_num2.grid(row=1, column=0, padx=10, pady=5, sticky="E")
 entry_num2 = tk.Entry(ventana)
 entry_num2.grid(row=1, column=1, padx=10, pady=5)
 
-# Botones para operaciones
+
 boton_suma = tk.Button(ventana, text="Suma", command=lambda: realizar_operacion('Suma'), bg="blue", fg="white")
 boton_suma.grid(row=2, column=0, padx=5, pady=5)
 
