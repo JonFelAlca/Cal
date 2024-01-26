@@ -39,12 +39,11 @@ def realizar_operacion(operacion):
     except ValueError:
         messagebox.showerror("Error", "Por favor, ingrese números válidos.")
 
-# Crear la ventana principal
 ventana = tk.Tk()
 ventana.title("Calculadora")
 ventana.geometry("300x250")
 
-# Crear etiquetas y entradas
+
 label_num1 = tk.Label(ventana, text="Número 1:")
 label_num1.grid(row=0, column=0, padx=10, pady=5, sticky="E")
 
