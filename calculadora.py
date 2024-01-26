@@ -13,6 +13,7 @@ def realizar_operacion(operacion):
         if not es_numero(entry_num1.get()) or not es_numero(entry_num2.get()):
             messagebox.showerror("Error", "Por favor, ingrese números válidos.")
             return
+        
 
         num1 = float(entry_num1.get())
         num2 = float(entry_num2.get())
