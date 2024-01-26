@@ -58,7 +58,6 @@ boton_multiplicacion.grid(row=3, column=0, padx=5, pady=5)
 boton_division = tk.Button(ventana, text="División", command=lambda: realizar_operacion('División'), bg="red", fg="white")
 boton_division.grid(row=3, column=1, padx=5, pady=5)
 
-# Entrada para mostrar el resultado
 entry_resultado = tk.Entry(ventana, width=30, state="readonly", justify="center")
 entry_resultado.grid(row=4, column=0, columnspan=2, pady=5)
 
