@@ -19,8 +19,10 @@ def realizar_operacion(operacion):
                 messagebox.showerror("Error", "No se puede dividir entre cero.")
                 return
 
+        entry_resultado.config(state=tk.NORMAL)  # Permitir la escritura en el Entry
         entry_resultado.delete(0, tk.END)
         entry_resultado.insert(0, f"Resultado de {operacion}: {resultado:.2f}")
+        entry_resultado.config(state=tk.DISABLED)  # Deshabilitar la escritura en el Entry
 
     except ValueError:
         messagebox.showerror("Error", "Por favor, ingrese números válidos.")
