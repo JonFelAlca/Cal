@@ -53,6 +53,7 @@ entry_num1.grid(row=0, column=1, padx=10, pady=5)
 label_num2 = tk.Label(ventana, text="Número 2:")
 label_num2.grid(row=1, column=0, padx=10, pady=5, sticky="E")
 
+
 entry_num2 = tk.Entry(ventana)
 entry_num2.grid(row=1, column=1, padx=10, pady=5)
 
