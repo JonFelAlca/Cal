@@ -62,5 +62,5 @@ boton_division.grid(row=3, column=1, padx=5, pady=5)
 entry_resultado = tk.Entry(ventana, width=30, state="readonly", justify="center")
 entry_resultado.grid(row=4, column=0, columnspan=2, pady=5)
 
-# Iniciar el bucle principal de la ventana
+
 ventana.mainloop()
